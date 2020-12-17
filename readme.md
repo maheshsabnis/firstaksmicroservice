@@ -1,4 +1,10 @@
 
+# build he doecker image based on the dockerfile
+docker build . -t firstappforaks:0.0.1
+
+# run the docekr image
+docker run -p 8001:80 firstappforaks:0.0.1
+
 # login using az cli
 az login
 
