@@ -1,0 +1,16 @@
+#service file for publish
+apiVersion: v1
+kind: Service
+metadata:
+  labels: 
+    app: firstappforaks
+  name: first-app-for-aks
+spec:
+  ports:
+    - port: 8080
+      protocol: TCP
+      targetPort: 80
+  selector:
+    app: firstappforaks
+    component: netcore-app
+  type: LoadBalancer

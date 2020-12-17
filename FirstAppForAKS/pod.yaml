@@ -1,0 +1,14 @@
+# define configuration for PODS
+apiVersion: v1
+kind: Pod
+metadata:
+  name: first-app-for-aks
+  labels:
+    app: firstappforaks
+    component: netcore-app
+spec:
+  containers:
+    - name: weatherservice
+      image: sgacr1001.azurecr.io/firstappforaks:0.0.1
+      ports:
+        - containerPort: 80
