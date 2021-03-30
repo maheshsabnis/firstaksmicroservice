@@ -1,5 +1,5 @@
 
-# build the doecker image based on the dockerfile
+# build the docker image based on the dockerfile
 docker build . -t firstappforaks:0.0.1
 
 # run the docker image
